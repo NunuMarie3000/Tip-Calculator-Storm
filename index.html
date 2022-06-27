@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Tip Calculator by Stormy</title>
+</head>
+<body>
+    <div id="title">
+        <h1>Tip Split</h1>
+        <h2>By Stormy</h2>
+    </div>
+
+    <div id="container">
+        <div id="input-container">
+
+            <form id="tip-form" action="./app.js" target="_blank" method="post">
+                <div class="bill-container">
+                    <label for="bill">Bill Amount:</label><br>
+                    <input id="bill" type="number" name="bill" step="0.01">
+                </div><br>
+                
+                <div class="tip-container">
+                    <label for="tip">Tip Amount:</label><br>
+                    <select name="tip" id="tip" required>
+                        <option value="15">15%</option>
+                        <option value="18">18%</option>
+                        <option value="20">20%</option>
+                        <option value="25">25%</option>
+                      </select>    
+                </div><br>
+    
+                <div class="customers-container">
+                    <label for="customers">Number of Customers:</label><br>
+                    <input id="customers" type="number" name="customers">
+                </div><br>
+    
+                <div class="submit-button">
+                    <input id="submit-button" type="submit" value="Tip Split!">
+                </div>
+            </form>
+        </div>
+
+        <div id="output-container">
+            <div id="tip-per-person">
+                <h2>Tip Per Person</h2>
+                <div id="tip-results"></div>
+            </div>
+            <div id="total-per-person">
+                <h2>Total Per Person</h2>
+                <div id="total-results"></div>
+            </div>
+            <div id="reset-container">
+                <input type="reset" name="reset" id="reset-button">
+            </div>
+        </div>
+    </div>
+    <footer> &copy; StormyWeatherCreations 2022 </footer>
+
+    <script src="./app.js"></script>
+</body>
+</html>

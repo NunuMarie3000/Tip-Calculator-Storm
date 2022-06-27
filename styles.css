@@ -1,0 +1,74 @@
+body{
+    background-color: rgba(247, 159, 193, .7);
+    font-family: 'Berkshire Swash', cursive;
+}
+
+label{
+    font-size: x-large;
+}
+
+#container{
+    background-color: white;
+    padding: 5vh;
+    margin: 5vw;
+    display: flex;
+    justify-content: space-around;
+    border-top-left-radius: 0;
+    border-top-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+
+#input-container{
+    display: flex;
+    flex-direction: column;
+}
+
+#output-container{
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(126, 100, 132, .5);
+    padding: 3vh;
+    border-radius: 5%;
+}
+
+#reset-container{
+    margin-top: 7vh;
+}
+
+#reset-button{
+    cursor: pointer;
+    font-family: 'Berkshire Swash', cursive;
+    background-color: rgba(126, 100, 132, 1);
+    color: rgba(247, 159, 193, .9);
+    height: 5vh;
+    width: 8vw;
+    font-size: 1.5vw;
+    border-radius: 5%;
+}
+#reset-button:hover{
+    background-color: rgba(126, 100, 132, .7);
+    color: rgb(243, 143, 181); 
+}
+
+#submit-button{
+    cursor: pointer;
+    font-family: 'Berkshire Swash', cursive;
+    background-color: rgba(126, 100, 132, 1);
+    color: rgba(247, 159, 193, .9);
+    height: 7vh;
+    width: 10vw;
+    font-size: 2vw;
+    border-radius: 5%;
+}
+#submit-button:hover{
+    background-color: rgba(126, 100, 132, .7);
+    color: rgb(243, 143, 181);
+}
+
+#total-results{
+    font-size: 4vh;
+}
+#tip-results{
+    font-size: 4vh;
+}
