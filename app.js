@@ -18,7 +18,7 @@ function calculateTip(e){
     let tipResults = document.getElementById('tip-results');
     let totalPerPerson = document.getElementById('total-results');
 
-    let tipTotal = billAmount * (tipAmount * .01);
+    let tipTotal = (billAmount * (tipAmount * .01))/custAmount;
     //we have how much tip everyone is supposed to pay
     //now we need to divide the bill amount by everyone that's tipping, then add the tip amount to that split total
     let individualAmountPreTip = billAmount/custAmount;
