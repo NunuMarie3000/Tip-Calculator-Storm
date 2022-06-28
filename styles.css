@@ -3,6 +3,11 @@ body{
     font-family: 'Berkshire Swash', cursive;
 }
 
+#title{
+    margin-left: 5vw;
+    padding: 5vh 5vh 0 5vh;
+}
+
 label{
     font-size: x-large;
 }
@@ -10,7 +15,7 @@ label{
 #container{
     background-color: white;
     padding: 5vh;
-    margin: 5vw;
+    margin: 0 5vw 5vw 5vw;
     display: flex;
     justify-content: space-around;
     border-top-left-radius: 0;
@@ -56,9 +61,9 @@ label{
     font-family: 'Berkshire Swash', cursive;
     background-color: rgba(126, 100, 132, 1);
     color: rgba(247, 159, 193, .9);
-    height: 7vh;
-    width: 10vw;
-    font-size: 2vw;
+    height: 5vh;
+    width: 8vw;
+    font-size: 1.5vw;
     border-radius: 5%;
 }
 #submit-button:hover{
